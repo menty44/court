@@ -1,0 +1,300 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Court System</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.scrolly.min.js"></script>
+		<script src="js/jquery.scrollzer.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-wide.css" />
+		</noscript>
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<div id="header" class="skel-layers-fixed">
+
+				<div class="top">
+
+					<!-- Logo -->
+						<div id="logo">
+							<span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
+							<h1 id="title">fred oluoch</h1>
+							<p>Software Engineer</p>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<!--
+							
+								Prologue's nav expects links in one of two formats:
+								
+								1. Hash link (scrolls to a different section within the page)
+								
+								   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+
+								2. Standard link (sends the user to another page/site)
+
+								   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
+							
+							-->
+							<ul>
+								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
+								<li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
+								<li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
+								<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
+							</ul>
+						</nav>
+						
+				</div>
+				
+				<div class="bottom">
+
+					<!-- Social Icons -->
+						<ul class="icons">
+							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+							<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+							<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+				
+				</div>
+			
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Intro -->
+					<section id="top" class="one dark cover">
+						<div class="container">
+
+							<header>
+								<h2 class="alt"> <strong>Court System</strong><br />
+								app designed by <a href="http://ariftechnologies.com">arif Technologies</a>.</h2>
+								<p>Ligula scelerisque justo sem accumsan diam quis<br />
+								vitae natoque dictum sollicitudin elementum.</p>
+							</header>
+							
+							<footer>
+								<!--<a href="#portfolio" class="button scrolly">Magna Aliquam</a>-->
+							</footer>
+
+						</div>
+					</section>
+					
+				<!-- Portfolio -->
+					<section id="portfolio" class="two">
+						<div class="container">
+					
+							<header>
+								<h2>Judge</h2>
+							</header>
+							
+							<p>Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
+							egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus.
+							Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis 
+							fusce hendrerit lacus ridiculus.</p>
+						
+							<div class="row">
+								<!--<style>
+table { border-collapse: separate; background-color: #FFFFFF; border-spacing: 0; width: 50%; color: #666666; text-shadow: 0 1px 0 #FFFFFF; border: 1px solid #CCCCCC; box-shadow: 0; margin: 0 auto; }
+table thead tr th { background: none repeat scroll 0 0 #EEEEEE; color: #222222; padding: 10px 14px; text-align: left; border-top: 0 none; font-size: 12px; }
+table tbody tr td{
+    background-color: #FFFFFF;
+	font-size: 11px;
+    text-align: left;
+	padding: 10px 14px;
+	border-top: 1px solid #DDDDDD;
+}
+#pagination {
+	text-align: center;
+	margin-top: 20px;
+}
+#pagination a {
+	border: 1px solid #CCCCCC;
+	padding: 5px 10px;
+	font-family: arial;
+	text-decoration: none;
+	background: none repeat scroll 0 0 #EEEEEE;
+	color: #222222;
+}
+#pagination a:hover {
+	background-color: #FFFFFF;
+}
+a#active{
+	background-color: #FFFFFF;
+}
+#sample thead tr th {
+	font-size: 20px;
+}
+input {
+	border: 1px solid #CCCCCC;
+}
+#secret {
+	margin-top: 19px; width: 168px;
+}
+</style>-->
+<?php
+session_start();
+?>
+<?php
+if( isset($_SESSION['ERRMSG_ARR']) && is_array($_SESSION['ERRMSG_ARR']) && count($_SESSION['ERRMSG_ARR']) >0 ) {
+	echo '<ul style="padding:0; color:red;">';
+	foreach($_SESSION['ERRMSG_ARR'] as $msg) {
+		echo '<li>',$msg,'</li>'; 
+	}
+	echo '</ul>';
+	unset($_SESSION['ERRMSG_ARR']);
+}
+?>
+<form action="reg.php" method="POST" style="width: 50%; margin: 15px auto; height: 54px;">
+<div style="float:left;width:25%;">
+First Name<br>
+<input type="text" name="fname" />
+</div>
+<div style="float:left;width:25%;">
+Last Name<br>
+<input type="text" name="lname" />
+</div>
+<div style="float:left;width:25%;">
+Age<br>
+<input type="text" name="age" />
+</div>
+<div style="float:left;width:25%;">
+<input type="submit" value="Save" id="secret" />
+</div>
+</form>
+<table cellspacing="0" cellpadding="2" id="sample" >
+<thead>
+	<tr>
+		<th> First Name </th>
+		<th> Last Name </th>
+		<th> Age </th>
+		<th> Action </th>
+	</tr>
+</thead>
+<tbody>
+	<?php
+		include('connect.php');
+		if (isset($_GET["page"])) { $page  = $_GET["page"]; } else { $page=1; };
+		$start_from = ($page-1) * 6; 		
+		$result = $db->prepare("SELECT * FROM members ORDER BY id ASC LIMIT $start_from, 6");
+		$result->execute();
+		for($i=0; $row = $result->fetch(); $i++){
+	?>
+	<tr class="record">
+		<td><?php echo $row['fname']; ?></td>
+		<td><?php echo $row['lname']; ?></td>
+		<td><?php echo $row['age']; ?></td>
+		<td><a href="editform.php?id=<?php echo $row['id']; ?>"> edit </a> | <a href="delete.php?id=<?php echo $row['id']; ?>"> delete </a></td>
+	</tr>
+	<?php
+		}
+	?>
+</tbody>
+</table>
+<div id="pagination">
+	<?php 
+
+	$result = $db->prepare("SELECT COUNT(id) FROM members");
+	$result->execute(); 
+	$row = $result->fetch(); 
+	$total_records = $row[0]; 
+	$total_pages = ceil($total_records / 6); 
+	  
+	for ($i=1; $i<=$total_pages; $i++) { 
+				echo "<a href='index.php?page=".$i."'";
+				if($page==$i)
+				{
+				echo "id=active";
+				}
+				echo ">";
+				echo "".$i."</a> "; 
+	}; 
+	?>
+</div>
+
+						</div>
+					</section>
+
+				<!-- About Me -->
+					<section id="about" class="three">
+						<div class="container">
+
+							<header>
+								<h2>About Me</h2>
+							</header>
+
+							<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
+							
+							<p>Tincidunt eu elit diam magnis pretium accumsan etiam id urna. Ridiculus 
+							ultricies curae quis et rhoncus velit. Lobortis elementum aliquet nec vitae 
+							laoreet eget cubilia quam non etiam odio tincidunt montes. Elementum sem 
+							parturient nulla quam placerat viverra mauris non cum elit tempus ullamcorper 
+							dolor. Libero rutrum ut lacinia donec curae mus vel quisque sociis nec 
+							ornare iaculis.</p>
+
+						</div>
+					</section>
+			
+				<!-- Contact -->
+					<section id="contact" class="four">
+						<div class="container">
+
+							<header>
+								<h2>Contact</h2>
+							</header>
+
+							<p>Elementum sem parturient nulla quam placerat viverra 
+							mauris non cum elit tempus ullamcorper dolor. Libero rutrum ut lacinia 
+							donec curae mus. Eleifend id porttitor ac ultricies lobortis sem nunc 
+							orci ridiculus faucibus a consectetur. Porttitor curae mauris urna mi dolor.</p>
+							
+							<form method="post" action="#">
+								<div class="row 50%">
+									<div class="6u"><input type="text" name="name" placeholder="Name" /></div>
+									<div class="6u"><input type="text" name="email" placeholder="Email" /></div>
+								</div>
+								<div class="row 50%">
+									<div class="12u">
+										<textarea name="message" placeholder="Message"></textarea>
+									</div>
+								</div>
+								<div class="row">
+									<div class="12u">
+										<input type="submit" value="Send Message" />
+									</div>
+								</div>
+							</form>
+
+						</div>
+					</section>
+			
+			</div>
+
+		<!-- Footer -->
+			<div id="footer">
+				
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				
+			</div>
+
+	</body>
+</html>
